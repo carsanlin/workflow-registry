@@ -1,0 +1,28 @@
+simulBS                      # Title
+bathyfile             # Bathymetry file for level 0
+1                           # Initialization type (0:Sea surface displacement from file,1:Standard Okada,2:Standard Okada from file,3:Triangular Okada,4:Triangular Okada from file,5:Sea floor deformation from file,6:Gaussian)
+0                           # Apply Kajiura filter to the Okada deformation (0: no, 1: yes)
+1                           # Number of faults (>= 1)
+0. eqlon eqlat eqdep eqlen eqwid eqstk eqdip eqrak eqslip #Time(sec) Lon_epicenter Lat_epicenter Depth_hypocenter(km) Fault_lenght(km) Fault_width(km) Strike Dip Rake Slip(m)
+0                      #Use Okada computation window (0: no, 1: yes)
+Step2_BS/idscen/out                # NetCDF file prefix for level 0
+0 0 0 0 0 0 0         # Variables saved (eta, maximum eta, velocities, modulus of velocity, momentum flux, maximum momentum flux, arrival times) (1: save, 0: do not save)
+1                           # Number of levels
+1                           # Upper border condition (1: open, -1: wall)
+1                           # Lower border condition
+1                           # Left border condition
+1                           # Right border condition
+simtime                      # Simulation time (sec)
+-1                        # Saving time of NetCDF files (sec) (-1: do not save)
+TSFLAG                           # Read points from file (0: no, 1: yes). Used for time series
+Step2_ts.dat                      # File with point locations for time series
+30                          # Saving time of time series (sec)
+0.7                         # CFL
+5e-3                        # Epsilon h (m)
+20                          # Threshold for the 2s+WAF scheme (m)
+0.2                         # Stability coefficient for each level
+0                           # Friction type (0: fixed, 1: variable) (it should be 0)
+0.03                        # Water-bottom friction (Manning coefficient)
+100                         # Maximum allowed velocity of water
+100000                      # L (typical length)
+1000                        # H (typical height)
