@@ -1,0 +1,1 @@
+{"cloud":{},"resources":{"p9r2n04-ib0":{"implementations":{"launch_step1_pycompss.step1_func":{"maxTime":-9223372036854775808,"executions":0,"avgTime":100,"minTime":9223372036854775807}}}},"implementations":{"launch_step1_pycompss.step1_func":{"maxTime":-9223372036854775808,"executions":0,"avgTime":100,"minTime":9223372036854775807}}}
